@@ -1,3 +1,23 @@
+## How to create the submodule relationship
+
+### 1. Add the submodule 
+
+```shell
+git submodule add git@github.com:antoinevanluchem/code-sharing-typescript.child.git ./packages/child
+```
+
+### 2. Add alias
+In `tsconfig.json`, add an alias:
+
+```json
+"paths": {
+    "@child/*": ["./packages/child/build/*"]
+}
+```
+
+
+
+
 ## Usage
 
 The first time you clone this project from Git, the submodules are not automatically initialized. Run following command in the root of the project.
