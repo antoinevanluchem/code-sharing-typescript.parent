@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "scripts": {
+    "parent": "npx tsc && node build/src/main.js"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
